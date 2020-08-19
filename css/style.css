@@ -66,6 +66,7 @@ header a:hover {
     font-weight: bolder;
     cursor: pointer;
     margin-left: 25%;
+    transition: 1.5s;
 }
 .first-section-info button:hover {
     background-color: #9792E3;
@@ -97,6 +98,7 @@ header a:hover {
     margin: auto;
     padding: 0 0 1rem;
     margin-top: 1rem;
+    transition: 2s;
 }
 .cake-link:hover {
     background-color: #26547C;
