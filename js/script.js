@@ -3,91 +3,77 @@ let slides2 = document.getElementsByClassName("card-2")[0];
 let slides3 = document.getElementsByClassName("card-3")[0];
 let slides4 = document.getElementsByClassName("card-4")[0];
 
-let btn = document.getElementById('button');
+let btn = document.getElementById("button");
 
-let previous = document.getElementById('left');
-let next = document.getElementById('right');
+let previous = document.getElementById("left");
+let next = document.getElementById("right");
 
-previous.addEventListener('click', function() {
+previous.addEventListener("click", function () {
+  if (
+    slides1.classList == "card background-white card-1 display-block" &&
+    slides2.classList == "card background-white card-2 display-block"
+  ) {
+    slides1.classList.remove("display-block");
+    slides1.classList.add("display-none");
+    slides2.classList.remove("display-block");
+    slides2.classList.add("display-none");
 
-    if (slides1.classList == "card background-white card-1 display-block" && slides2.classList == "card background-white card-2 display-block"){
-        slides1.classList.remove("display-block");
-        slides1.classList.add("display-none");
-        slides2.classList.remove("display-block");
-        slides2.classList.add("display-none");
+    slides3.classList.remove("display-none");
+    slides3.classList.add("display-block");
+    slides4.classList.remove("display-none");
+    slides4.classList.add("display-block");
+  } else if (
+    slides3.classList == "card background-white card-3 display-block" &&
+    slides4.classList == "card background-white card-4 display-block"
+  ) {
+    slides4.classList.remove("display-block");
+    slides4.classList.add("display-none");
 
-        slides3.classList.remove("display-none");
-        slides3.classList.add("display-block");
-        slides4.classList.remove("display-none");
-        slides4.classList.add("display-block");        
-    } 
-    else if (slides3.classList == "card background-white card-3 display-block" && slides4.classList == "card background-white card-4 display-block"){
-        slides4.classList.remove("display-block");
-        slides4.classList.add("display-none");
+    slides2.classList.remove("display-none");
+    slides2.classList.add("display-block");
+  } else if (
+    slides2.classList == "card background-white card-2 display-block" &&
+    slides3.classList == "card background-white card-3 display-block"
+  ) {
+    slides3.classList.remove("display-block");
+    slides3.classList.add("display-none");
 
-        slides2.classList.remove("display-none");
-        slides2.classList.add("display-block");
-    } 
-    else if (slides2.classList == "card background-white card-2 display-block" && slides3.classList == "card background-white card-3 display-block"){
-        slides3.classList.remove("display-block");
-        slides3.classList.add("display-none");
+    slides1.classList.remove("display-none");
+    slides1.classList.add("display-block");
+  }
+});
 
-        slides1.classList.remove("display-none");
-        slides1.classList.add("display-block");
-    };
-    
-})
+next.addEventListener("click", function () {
+  if (
+    slides1.classList == "card background-white card-1 display-block" &&
+    slides2.classList == "card background-white card-2 display-block"
+  ) {
+    slides1.classList.remove("display-block");
+    slides1.classList.add("display-none");
 
-next.addEventListener('click', function() {
+    slides3.classList.remove("display-none");
+    slides3.classList.add("display-block");
+  } else if (
+    slides2.classList == "card background-white card-2 display-block" &&
+    slides3.classList == "card background-white card-3 display-block"
+  ) {
+    slides2.classList.remove("display-block");
+    slides2.classList.add("display-none");
 
-    if (slides1.classList == "card background-white card-1 display-block" && slides2.classList == "card background-white card-2 display-block"){
-        slides1.classList.remove("display-block");
-        slides1.classList.add("display-none");
+    slides4.classList.remove("display-none");
+    slides4.classList.add("display-block");
+  } else if (
+    slides3.classList == "card background-white card-3 display-block" &&
+    slides4.classList == "card background-white card-4 display-block"
+  ) {
+    slides1.classList.remove("display-none");
+    slides1.classList.add("display-block");
+    slides2.classList.remove("display-none");
+    slides2.classList.add("display-block");
 
-        slides3.classList.remove("display-none");
-        slides3.classList.add("display-block");
-    }
-    else if (slides2.classList == "card background-white card-2 display-block" && slides3.classList == "card background-white card-3 display-block"){
-        slides2.classList.remove("display-block");
-        slides2.classList.add("display-none");
-
-        slides4.classList.remove("display-none");
-        slides4.classList.add("display-block");  
-    }
-    else if (slides3.classList == "card background-white card-3 display-block" && slides4.classList == "card background-white card-4 display-block"){
-        slides1.classList.remove("display-none");
-        slides1.classList.add("display-block");
-        slides2.classList.remove("display-none");
-        slides2.classList.add("display-block");
-
-        slides3.classList.remove("display-block");
-        slides3.classList.add("display-none");
-        slides4.classList.remove("display-block");
-        slides4.classList.add("display-none");  
-    };
-    
-})
-
-
-
-
-
-
-
-
-
-// let add = new Promise((resolve, reject) => {
-//     let a = 1 + 1;
-
-//     if (a == 2) {
-//         resolve('Success');
-//     } else {
-//         reject('Failed');
-//     }
-// });
-
-// add.then((message) => {
-//     console.log('This is in the then ' + message);
-// }).catch((message) => {
-//     console.log('This is in the catch ' + message);
-// });
+    slides3.classList.remove("display-block");
+    slides3.classList.add("display-none");
+    slides4.classList.remove("display-block");
+    slides4.classList.add("display-none");
+  }
+});

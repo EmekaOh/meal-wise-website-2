@@ -1,234 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MealWise Restaurant</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header>
-        <div class="display-flex align-items-center width-100 justify-content-space-between">
-            <div class="header-logo">
-                <h2>MEALWISE</h2>
-            </div>
-            <div class="nav-links">
-                <ul class="display-flex">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Partners</a></li>
-                    <li><a href="#">Deals</a></li>
-                </ul>
-            </div>
+      <div
+        class="display-flex align-items-center width-100 justify-content-space-between"
+      >
+        <div class="header-logo">
+          <h2>MEALWISE</h2>
         </div>
+        <div class="nav-links">
+          <ul class="display-flex">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Deals</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
+      <div class="main">
+        <div class="first-section-main">
+          <div class="first-section-info">
+            <h2>Tired of Waiting for Your Meal?</h2>
+            <p>Mealwise let you get the food by best chefs without waiting.</p>
+            <p>Eat what you love and save your time for something cool!</p>
+            <button>Find the restaurant</button>
+          </div>
 
-        <div class="main">
-            <div class="first-section-main">
-                <div class="first-section-info">
-                    <h2>Tired of Waiting for Your Meal?</h2>
-                    <p>Mealwise let you get the food by best chefs without waiting.</p>
-                    <p>Eat what you love and save your time for something cool!</p>
-                    <button>Find the restaurant</button>
-                </div>
-        
-                <div class="second-section-info">
-                    <div class="display-flex justify-content-space-between">
-                        <h2>HOT DESSERTS:</h2>
-                        <a href="#"><p>More <i class="fas fa-chevron-circle-right"></i></p></a>
-                    </div>
-        
-                    <div class="menu-container">
-                        <div class="cake-link">
-                            <a href="#">
-                                <img src="https://www.twobite.ca/wp-content/uploads/2011/05/RedVelvetCupcake.png" alt="Rose Muffin">
-                                <div>
-                                    <h2>Rose Muffin</h2>
-                                    <p>$4</p>
-                                </div>
-                            </a>
-                        </div>
-        
-                        <div class="cake-link">
-                            <a href="#">
-                                <img src="https://cdn.shopify.com/s/files/1/1087/0244/products/mini_party_catering_red_velvet_cupcake_grande.png?v=1455860949" alt="Caramel Puncake">
-                                <div>
-                                    <h2>Caramel Puncake</h2>
-                                    <p>$2</p>
-                                </div>
-                            </a>
-                        </div>
-        
-                        <div class="cake-link">
-                            <a href="#">
-                                <img src="https://www.twobite.ca/wp-content/uploads/2011/05/RedVelvetCupcake.png" alt="Berry Meringue">
-                                <div>
-                                    <h2>Berry Meringue</h2>
-                                    <p>$3</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-        
-                </div>
+          <div class="second-section-info">
+            <div class="display-flex justify-content-space-between">
+              <h2>HOT DESSERTS:</h2>
+              <a href="#"
+                ><p>More <i class="fas fa-chevron-circle-right"></i></p
+              ></a>
             </div>
-    
-            <div class="third-section-info">
-                <div class="search display-flex align-items-center width-70 justify-content-space-around">
-                    <div class="search-bar">
-                        <i class="fas fa-search"></i>
-                        <input type="text" placeholder="Search">
-                    </div>
-                    <div>
-                        <button class="btn-light">Join US</button>
-                    </div>
-                </div>
-    
-                <div class="menu display-flex b align-items-center width-50 justify-content-space-between">
-                    <div class="food-menu">
-                        <button id="button"class="btn-accept">See all menu</button>
-                    </div>
-                    <div class="nav-buttons">
-                        <a href="#" id="left"><i class="fas fa-chevron-left"></i></a>
-                        <a href="#" id="right"><i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
-    
-                <div class="menu-list width-70">
-                    <div class="card background-white card-1 display-block">
-                        <h1 class="card-number">One</h1>
-                        <div class="card-heading display-flex align-items-center justify-content-space-around">
-                            <div>
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h2>Monet Restaurant</h2>
-                                <p>1.4km away</p>
-                            </div>
-                            <div class="text-yellow">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-    
-                        <div>
-                            <h2 class="breakfast">Light Breakfast</h2>
-                            <p>A delicious combination of crispy toast, boiled eggs and avacado slices with fresh cherry tomato.</p>
-                            
-                            <div class="card-price display-flex justify-content-space-between">
-                                <p>$8</p>
-                                <p class="text-blue">Order</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="card background-white card-2 display-block">
-                        <h1 class="card-number">Two</h1>
-                        <div class="card-heading display-flex align-items-center justify-content-space-around">
-                            <div>
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h2>Double Bubble</h2>
-                                <p>2.2km away</p>
-                            </div>
-                            <div class="text-yellow">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-    
-                        <div>
-                            <h2 class="breakfast">Summer Breakfast</h2>
-                            <p>A delicious combination of Fresh oatmeal, boiled eggs and avacado slices with fresh cherry tomato, strawberry and orange juice.</p>
-                            
-                            <div class="card-price display-flex justify-content-space-between">
-                                <p>$12</p>
-                                <p class="text-blue">Order</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="card background-white card-3 display-none">
-                        <h1 class="card-number">Three</h1>
-                        <div class="card-heading display-flex align-items-center justify-content-space-around">
-                            <div>
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h2>Falry Paste</h2>
-                                <p>2.9km away</p>
-                            </div>
-                            <div class="text-yellow">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-    
-                        <div>
-                            <h2 class="breakfast">Winter Breakfast</h2>
-                            <p>A delicious combination of Fresh oatmeal, boile fresh cherry tomato, strawberry and orange juice.</p>
-                            
-                            <div class="card-price display-flex justify-content-space-between">
-                                <p>$15</p>
-                                <p class="text-blue">Order</p>
-                            </div>
-                        </div>
-                    </div>  
 
-                    <div class="card background-white card-4 display-none">
-                        <h1 class="card-number">One</h1>
-                        <div class="card-heading display-flex align-items-center justify-content-space-around">
-                            <div>
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h2>Monet Restaurant</h2>
-                                <p>1.4km away</p>
-                            </div>
-                            <div class="text-yellow">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-    
-                        <div>
-                            <h2 class="breakfast">Light Breakfast</h2>
-                            <p>A delicious combination of crispy toast, boiled eggs and avacado slices with fresh cherry tomato.</p>
-                            
-                            <div class="card-price display-flex justify-content-space-between">
-                                <p>$8</p>
-                                <p class="text-blue">Order</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="menu-container">
+              <div class="cake-link">
+                <a href="#">
+                  <img
+                    src="https://www.twobite.ca/wp-content/uploads/2011/05/RedVelvetCupcake.png"
+                    alt="Rose Muffin"
+                  />
+                  <div>
+                    <h2>Rose Muffin</h2>
+                    <p>$4</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="cake-link">
+                <a href="#">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/1087/0244/products/mini_party_catering_red_velvet_cupcake_grande.png?v=1455860949"
+                    alt="Caramel Puncake"
+                  />
+                  <div>
+                    <h2>Caramel Puncake</h2>
+                    <p>$2</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="cake-link">
+                <a href="#">
+                  <img
+                    src="https://www.twobite.ca/wp-content/uploads/2011/05/RedVelvetCupcake.png"
+                    alt="Berry Meringue"
+                  />
+                  <div>
+                    <h2>Berry Meringue</h2>
+                    <p>$3</p>
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
 
+        <div class="third-section-info">
+          <div
+            class="search display-flex align-items-center width-70 justify-content-space-around"
+          >
+            <div class="search-bar">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search" />
+            </div>
+            <div>
+              <button class="btn-light">Join US</button>
+            </div>
+          </div>
+
+          <div
+            class="menu display-flex b align-items-center width-50 justify-content-space-between"
+          >
+            <div class="food-menu">
+              <button id="button" class="btn-accept">See all menu</button>
+            </div>
+            <div class="nav-buttons">
+              <a href="#" id="left"><i class="fas fa-chevron-left"></i></a>
+              <a href="#" id="right"><i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <div class="menu-list width-70">
+            <div class="card background-white card-1 display-block">
+              <h1 class="card-number">One</h1>
+              <div
+                class="card-heading display-flex align-items-center justify-content-space-around"
+              >
+                <div>
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h2>Monet Restaurant</h2>
+                  <p>1.4km away</p>
+                </div>
+                <div class="text-yellow">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="breakfast">Light Breakfast</h2>
+                <p>
+                  A delicious combination of crispy toast, boiled eggs and
+                  avacado slices with fresh cherry tomato.
+                </p>
+
+                <div
+                  class="card-price display-flex justify-content-space-between"
+                >
+                  <p>$8</p>
+                  <p class="text-blue">Order</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card background-white card-2 display-block">
+              <h1 class="card-number">Two</h1>
+              <div
+                class="card-heading display-flex align-items-center justify-content-space-around"
+              >
+                <div>
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h2>Double Bubble</h2>
+                  <p>2.2km away</p>
+                </div>
+                <div class="text-yellow">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="breakfast">Summer Breakfast</h2>
+                <p>
+                  A delicious combination of Fresh oatmeal, boiled eggs and
+                  avacado slices with fresh cherry tomato, strawberry and orange
+                  juice.
+                </p>
+
+                <div
+                  class="card-price display-flex justify-content-space-between"
+                >
+                  <p>$12</p>
+                  <p class="text-blue">Order</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card background-white card-3 display-none">
+              <h1 class="card-number">Three</h1>
+              <div
+                class="card-heading display-flex align-items-center justify-content-space-around"
+              >
+                <div>
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h2>Falry Paste</h2>
+                  <p>2.9km away</p>
+                </div>
+                <div class="text-yellow">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="breakfast">Winter Breakfast</h2>
+                <p>
+                  A delicious combination of Fresh oatmeal, boile fresh cherry
+                  tomato, strawberry and orange juice.
+                </p>
+
+                <div
+                  class="card-price display-flex justify-content-space-between"
+                >
+                  <p>$15</p>
+                  <p class="text-blue">Order</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card background-white card-4 display-none">
+              <h1 class="card-number">One</h1>
+              <div
+                class="card-heading display-flex align-items-center justify-content-space-around"
+              >
+                <div>
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h2>Monet Restaurant</h2>
+                  <p>1.4km away</p>
+                </div>
+                <div class="text-yellow">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="breakfast">Light Breakfast</h2>
+                <p>
+                  A delicious combination of crispy toast, boiled eggs and
+                  avacado slices with fresh cherry tomato.
+                </p>
+
+                <div
+                  class="card-price display-flex justify-content-space-between"
+                >
+                  <p>$8</p>
+                  <p class="text-blue">Order</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div>
-            <p>Designed by <a class="text-blue" href="https://github.com/Emeka08">Emeka</a></p>
-        </div>
+      <div>
+        <p>
+          Designed by
+          <a class="text-blue" href="https://github.com/Emeka08">Emeka</a>
+        </p>
+      </div>
     </footer>
 
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
