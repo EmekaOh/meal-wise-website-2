@@ -7,6 +7,7 @@
 @import url("./components/reset.css");
 @import url("./components/spacing-properties.css");
 
+
 h1,
 h2 {
   font-family: "Alata", sans-serif;
@@ -225,6 +226,7 @@ footer a:hover {
 @media only screen and (min-width: 1100px) {
   .main {
     display: flex;
+    overflow: hidden;
   }
   .first-section-main,
   .third-section-info {
